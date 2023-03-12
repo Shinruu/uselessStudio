@@ -1,0 +1,398 @@
+/* ----------------------------------------
+ENTIRE PAGE SETTINGS
+------------------------------------------- */
+
+@font-face {
+  font-family: formular-light;
+  src: url(./typographie/Formular-Light.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: formular-light;
+  color: #303130;
+  object-fit: cover;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ----------------------------------------
+NAVBAR
+------------------------------------------- */
+
+/* hover effect for the navbar */
+.home:hover,
+.work:hover,
+.studio:hover,
+.contact:hover {
+  color: #d5dad0;
+}
+
+/* navbar position above pictures */
+.nav-link {
+  z-index: 1000;
+}
+
+/* ----------------------------------------
+PRELOADER 
+-------------------------------------------*/
+
+#preloader {
+  transition: opacity 1s ease;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  overflow: visible;
+  background: #fbfcfa url("./images/testgif.gif") no-repeat center center;
+  display: none;
+  opacity: 1;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+}
+
+/* ---------------------------------------
+CAROUSEL
+---------------------------------------- */
+
+/* icon instead of arrows on the carousel (left) */
+.carousel .carousel-control-prev-icon {
+  background-image: url(./images/linewhite.png);
+  height: 4.5rem;
+  width: 1px;
+  margin-left: -10rem;
+  background: #303130;
+}
+
+/* icon instead of arrows on the carousel (right) */
+.carousel .carousel-control-next-icon {
+  background-image: url(./images/linewhite.png);
+  height: 4.5rem;
+  width: 1px;
+  margin-left: 10rem;
+  background: #303130;
+}
+
+/* bottom indicators changing height and width */
+.carousel-indicators [data-bs-target] {
+  width: 4rem;
+  height: 0.05rem;
+  margin-right: 1rem;
+  background-color: #222;
+}
+
+/* --------------------------------------
+WORK 
+-----------------------------------------*/
+
+/* PARAGRAPHS */
+
+/* position of all projects */
+.project-paragraph {
+  max-width: 80%;
+  overflow-y: scroll;
+}
+/* to remove the scroll bar for project-paragraph */
+.project-paragraph::-webkit-scrollbar {
+  display: none;
+}
+
+/* fading out effect for project-paragraph */
+p.project-paragraph:hover a {
+  color: #d5dad0;
+}
+
+/* hover effect for project-paragraph*/
+a.projectone,
+p.project-paragraph a.projectone:hover {
+  color: #303130;
+  transition-duration: 0.8s;
+}
+
+/* transition for project-paragraph */
+a.projectone {
+  transition-duration: 0.8s;
+}
+
+/* hover over effect for projects */
+.fade-in {
+  transition-duration: 1s;
+}
+
+/* hover over effect to show pictures left */
+#links IMG {
+  display: none;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+
+/* ------------------------------------
+PROJECTS & STUDIO 
+---------------------------------------*/
+
+/* PARAGRAPHS */
+
+/* box around info-paragraph */
+.info-paragraph {
+  width: 37.5rem;
+  max-width: 80%;
+  height: 37.5rem;
+  overflow-y: scroll;
+}
+
+/* to remove the scroll bars for info-paragraph */
+.info-paragraph::-webkit-scrollbar {
+  display: none;
+}
+
+/* ------------------------------------
+STUDIO 
+---------------------------------------*/
+
+/* PARAGRAPHS CREDENTIALS*/
+
+/* to make a box around the credentials */
+.middle-paragraph {
+  height: 37.5rem;
+  overflow-y: scroll;
+}
+
+/* to remove the scroll bars left and right */
+.middle-paragraph::-webkit-scrollbar {
+  display: none;
+}
+
+/* hover effect of the link of the article with credentials */
+a.article:hover {
+  color: #d5dad0;
+}
+
+/* -----------------------------------
+CONTACT
+-------------------------------------- */
+
+/* hover effect of the link to email */
+a.email-link:hover {
+  color: #d5dad0;
+}
+
+/* backgroundimage for contact page */
+.bg {
+  background-image: url(./images/useless-studio-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-color: #90b4d0;
+}
+
+/* ----------------------------------
+TABLET (IPAD)
+------------------------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* adjusting the position of the text of the contact page */
+  .mobile-text-contact {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    margin: 0rem !important;
+    left: 40% !important;
+    top: 88% !important;
+  }
+
+  /* background image for mobile */
+  .bg {
+    background-size: contain;
+  }
+}
+/* ----------------------------------
+TABLET (NEST HUB)
+------------------------------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* icon instead of arrows on the carousel (left) */
+  .carousel .carousel-control-prev-icon {
+    margin-left: -10%;
+  }
+
+  /* icon instead of arrows on the carousel (right) */
+  .carousel .carousel-control-next-icon {
+    margin-left: 10%;
+  }
+
+  .mobile-picture-studio {
+    margin-top: -7%;
+  }
+}
+
+/* ----------------------------------
+MOBILE PHONE
+------------------------------------- */
+@media (max-width: 767px) {
+  /* NAVBAR */
+
+  /* home button sticky to top-left */
+  .sticky-position-home {
+    position: fixed !important;
+    bottom: 90%;
+  }
+
+  /* work button sticky to bottom-left */
+  .sticky-position-work {
+    position: fixed !important;
+    bottom: -3px;
+  }
+
+  /* studio button sticky to top-right */
+  .sticky-position-studio {
+    position: fixed !important;
+    top: -3px;
+  }
+
+  /* contact button sticky to bottom-right */
+  .sticky-position-contact {
+    position: fixed !important;
+    bottom: 10%;
+  }
+
+  /* PICTURES */
+
+  /* removing pictures for mobile */
+  .img-gone {
+    display: none;
+  }
+
+  /* CAROUSEL */
+
+  /* icon instead of arrows on the carousel (left) */
+  .carousel .carousel-control-prev-icon {
+    margin-left: -1rem;
+  }
+
+  /* icon instead of arrows on the carousel (right) */
+  .carousel .carousel-control-next-icon {
+    margin-left: 1rem;
+  }
+
+  /* carousel title above the indicators on mobile */
+  .d-md-block {
+    display: block !important;
+    margin-bottom: 5vh;
+  }
+
+  /* indicators of the carousel to adjust the position on mobile */
+  .carousel-indicators [data-bs-target] {
+    margin-bottom: 5vh;
+  }
+
+  /* HOME */
+
+  /* giving more margin space so that the text doesn't overlap the navbar on mobile */
+  .title {
+    margin-bottom: 5vh;
+  }
+
+  /* STUDIO */
+
+  /* for mobile version to adjust text in middle */
+  .mobile-text-title {
+    padding-left: 0rem;
+    margin-top: 40%;
+    margin-bottom: 4%;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* mobile text in studio*/
+  .mobile-text-studio {
+    padding-left: 0rem;
+    margin-top: 0rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  /* mobile title for credentials */
+  .mobile-credentials {
+    padding-left: 0rem;
+    margin-top: 0%;
+    margin-bottom: 4%;
+  }
+
+  /* mobile text for credentials */
+  .middle-paragraph {
+    width: 100vw;
+    max-width: 100%;
+    height: 61vh;
+  }
+
+  /* STUDIO & PROJECTS */
+
+  /* box around info-paragraph for mobile */
+  .info-paragraph {
+    width: 100vw;
+    max-width: 100%;
+    height: 62vh;
+  }
+
+  /* WORK */
+
+  /* position for mobile version for projects */
+  .project-paragraph {
+    margin-left: 0rem;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* for mobile version to adjust text in middle */
+  .mobile-text-projects {
+    margin-top: 30vh;
+    text-align: center;
+    margin-left: 0rem;
+  }
+
+  /* hover over effect to show pictures left */
+  #links IMG {
+    visibility: hidden;
+  }
+
+  /* PROJECTS */
+
+  /* position for mobile version for the information of the projects */
+  .mobile-text-info {
+    margin-top: -1vh;
+    text-align: center;
+    height: 28vh;
+  }
+
+  /* position of the picture */
+  .mobile-projects-plattegrond {
+    margin-top: 1rem;
+  }
+
+  /* CONTACT */
+
+  /* adjusting the position of the text of the contact page */
+  .mobile-text-contact {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    margin: 0rem !important;
+    left: 5rem !important;
+    top: 80% !important;
+  }
+
+  /* background image for mobile */
+  .bg {
+    background-size: contain;
+  }
+}
