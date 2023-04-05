@@ -38,7 +38,12 @@
     <!-- Carousel -->
     <!-- id of carousel has to be the same as data-bs-target -->
     <!-- data-bs-ride has to be set on false if you want to click, else for slideshow it has to be on carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="false">
+    <div
+      id="demo"
+      class="carousel slide"
+      data-bs-ride="false"
+      data-bs-wrap="true"
+    >
       <!-- indicators on the bottom -->
       <div class="carousel-indicators">
         <button
@@ -52,48 +57,121 @@
           data-bs-target="#demo"
           data-bs-slide-to="1"
         ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+          class="large-gone"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="3"
+          class="large-gone"
+        ></button>
         <!-- make here more buttons if you want more slides -->
       </div>
       <!-- FIRST SLIDE -->
       <div class="carousel-inner">
         <!-- first slide has to be active, else it won't work -->
-        <div class="carousel-item active vh-100 w-100">
+        <div class="carousel-item vh-100 w-100">
           <img
-            src="./images/190922 useless studio0422-.jpg "
-            class="w-50 h-100 float-start"
+            src="/images/PATIO image 1 for computer.jpg"
+            class="w-100 h-100 img-gone tablet-img-gone"
             alt="patio apartment"
           />
           <img
-            src="./images/190922 useless studio0397- kopie.jpg"
-            class="w-50 h-100 float-end"
+            src="./images/PATIO image 2 for phone.jpg"
+            class="w-100 h-100"
             alt="patio apartment"
           />
         </div>
         <!-- SECOND SLIDE -->
         <div class="carousel-item vh-100 w-100">
           <div class="row align-items-center">
-            <div class="col-12 col-md-6 px-0">
+            <div class="col-12 col-md-6 px-5">
               <img
-                src="./images/johns plattegrond.png"
-                class="w-100 h-100 mobile-projects-plattegrond"
+                src="./images/PATIO image 2 alternatief for computer.jpg"
+                class="w-75 h-100 img-gone"
+                alt="patio apartment plattegrond"
+              />
+              <img
+                src="./images/PATIO image 3 for phone.jpg"
+                class="w-100 h-100 mobile-projects-plattegrond large-gone"
                 alt="patio apartment plattegrond"
               />
             </div>
-            <div class="col-12 col-md-6">
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 px-5">
-                  <p class="info-paragraph lh-lg py-3 mobile-text-info">
-                    title / patio apartment <br />
-                    location / amsterdam <br />
-                    client / private <br />
-                    date / 2021 <br />
-                    size / 83m2 <br />
-                    illustrations / useless studio <br />
-                    photography / lennert antonissen <br />
+            <div class="col-12 col-md-6 px-5">
+              <div class="row align-items-center px-5">
+                <div class="col-12 col-md-6 px-5 py-5">
+                  <p class="mobile-text-info d-none d-sm-block">
+                    <span class="titles">title</span> <br />
+                    patio apartment <br />
+                    <br />
+                    <span class="titles">location</span> <br />
+                    amsterdam <br />
+                    <br />
+                    <span class="titles">client</span> <br />
+                    private <br />
+                    <br />
+                    <span class="titles">date</span> <br />
+                    2021 <br />
+                    <br />
+                    <span class="titles">size</span> <br />
+                    83m2 <br />
+                    <br />
+                    <span class="titles">illustrations</span> <br />
+                    useless studio <br />
+                    <br />
+                    <span class="titles">photography</span> <br />
+                    lennert antonissen <br />
+                    <br />
+                    <span class="titles">team</span> <br />
+                    john william bosch
                   </p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <!-- THIRD SLIDE MOBILE -->
+        <div class="carousel-item vh-100 w-100">
+          <div class="align-items-center justify-content-center">
+            <p class="mobile-text-info large-gone">
+              <span class="titles">title</span> <br />
+              patio apartment <br />
+              <br />
+              <span class="titles">location</span> <br />
+              amsterdam <br />
+              <br />
+              <span class="titles">client</span> <br />
+              private <br />
+              <br />
+              <span class="titles">date</span> <br />
+              2021 <br />
+              <br />
+              <span class="titles">size</span> <br />
+              83m2 <br />
+              <br />
+              <span class="titles">illustrations</span> <br />
+              useless studio <br />
+              <br />
+              <span class="titles">photography</span> <br />
+              lennert antonissen <br />
+              <br />
+              <span class="titles">team</span> <br />
+              john william bosch
+            </p>
+          </div>
+        </div>
+        <!-- FORTH SLIDE MOBILE -->
+        <div class="carousel-item vh-100 w-100">
+          <div class="row align-items-center">
+            <img
+              src="./images/PATIO image 1 for phone.jpg"
+              class="w-100 h-100 m-0 large-gone"
+              alt="patio apartment"
+            />
           </div>
         </div>
         <!-- carousel-caption is text in the carousel at the bottom above the indicators -->
@@ -122,5 +200,39 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+    ></script>
+    <script>
+      function adjustCarousel() {
+        if ($(window).width() >= 992) {
+          // For desktop devices
+          $("#demo").carousel({
+            interval: false, // Disable automatic slide advance
+          });
+          $("#demo").find(".carousel-item:first").addClass("active");
+          $("#demo").addClass("slide"); // Add slide class to carousel
+          $("#demo").find(".carousel-item:gt(1)").remove(); // Remove extra slides
+        } else {
+          // For mobile devices
+          $("#demo").carousel({
+            interval: false, // Set automatic slide advance interval
+          });
+
+          $("#demo").find(".carousel-item").removeClass("active"); // Remove active class from all slides
+          $("#demo").find(".carousel-item:first").addClass("active"); // Set the first slide as active
+        }
+      }
+
+      $(document).ready(function () {
+        adjustCarousel(); // Call the function on page load
+        $(window).resize(function () {
+          setTimeout(function () {
+            adjustCarousel(); // Call the function on window resize
+          }, 250);
+        });
+      });
+    </script>
   </body>
 </html>

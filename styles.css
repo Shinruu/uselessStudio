@@ -137,12 +137,22 @@ a.projectone {
   bottom: 0px;
 }
 
+/* -----------------------------------
+PROJECTS
+-------------------------------------*/
+.titles {
+  color: #d5dad0;
+}
+
+.plattegrond {
+  margin-top: -10vh;
+}
+
 /* ------------------------------------
-PROJECTS & STUDIO 
+STUDIO 
 ---------------------------------------*/
 
 /* PARAGRAPHS */
-
 /* box around info-paragraph */
 .info-paragraph {
   width: 37.5rem;
@@ -155,10 +165,6 @@ PROJECTS & STUDIO
 .info-paragraph::-webkit-scrollbar {
   display: none;
 }
-
-/* ------------------------------------
-STUDIO 
----------------------------------------*/
 
 /* PARAGRAPHS CREDENTIALS*/
 
@@ -198,6 +204,23 @@ a.email-link:hover {
   background-color: #90b4d0;
 }
 
+/* ---------------------------------
+LARGE SCREEN
+------------------------------------*/
+@media (min-width: 768px) {
+  .large-gone {
+    display: none !important;
+  }
+  #demo.carousel-item:nth-child(n + 3) {
+    display: none !important;
+  }
+  #demo.carousel-item:nth-child(n + 3)
+    + .carousel-item
+    .carousel-control-next-icon {
+    display: none !important;
+  }
+}
+
 /* ----------------------------------
 TABLET (IPAD)
 ------------------------------------- */
@@ -215,6 +238,10 @@ TABLET (IPAD)
   .bg {
     background-size: contain;
   }
+
+  .tablet-img-gone {
+    display: none;
+  }
 }
 /* ----------------------------------
 TABLET (NEST HUB)
@@ -229,9 +256,21 @@ TABLET (NEST HUB)
   .carousel .carousel-control-next-icon {
     margin-left: 10%;
   }
-
-  .mobile-picture-studio {
-    margin-top: -7%;
+  .mobile-text-info {
+    padding-top: 10vh;
+  }
+  .info-paragraph {
+    height: 60vh;
+  }
+  .mobile-text-info {
+    margin-top: 0vh;
+    overflow-y: scroll;
+    height: 70vh;
+    width: 15vw;
+  }
+  /* to remove the scroll bars left and right */
+  .mobile-text-info::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -295,6 +334,10 @@ MOBILE PHONE
     margin-bottom: 5vh;
   }
 
+  #demo.carousel-item {
+    display: block;
+  }
+
   /* HOME */
 
   /* giving more margin space so that the text doesn't overlap the navbar on mobile */
@@ -307,7 +350,7 @@ MOBILE PHONE
   /* for mobile version to adjust text in middle */
   .mobile-text-title {
     padding-left: 0rem;
-    margin-top: 40%;
+    margin-top: 25%;
     margin-bottom: 4%;
     text-align: center;
     width: 100%;
@@ -370,14 +413,20 @@ MOBILE PHONE
 
   /* position for mobile version for the information of the projects */
   .mobile-text-info {
-    margin-top: -1vh;
+    margin-top: 8vh;
     text-align: center;
-    height: 28vh;
+    overflow-y: scroll;
+    height: 70vh;
+  }
+
+  /* to remove the scroll bars left and right */
+  .mobile-text-info::-webkit-scrollbar {
+    display: none;
   }
 
   /* position of the picture */
   .mobile-projects-plattegrond {
-    margin-top: 1rem;
+    margin-top: -15vh;
   }
 
   /* CONTACT */
