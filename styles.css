@@ -126,7 +126,7 @@ a.projectone {
 
 /* hover over effect for projects */
 .fade-in {
-  transition-duration: 1s;
+  transition-duration: 2.5s;
 }
 
 /* hover over effect to show pictures left */
@@ -227,11 +227,9 @@ TABLET (IPAD)
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* adjusting the position of the text of the contact page */
   .mobile-text-contact {
-    padding-left: 0rem !important;
-    padding-right: 0rem !important;
-    margin: 0rem !important;
-    left: 40% !important;
-    top: 88% !important;
+    margin-left: 0rem;
+    max-width: 100%;
+    text-align: center;
   }
 
   /* background image for mobile */
@@ -424,20 +422,15 @@ MOBILE PHONE
     display: none;
   }
 
-  /* position of the picture */
-  .mobile-projects-plattegrond {
-    margin-top: -15vh;
-  }
-
   /* CONTACT */
 
   /* adjusting the position of the text of the contact page */
   .mobile-text-contact {
-    padding-left: 0rem !important;
-    padding-right: 0rem !important;
-    margin: 0rem !important;
-    left: 5rem !important;
-    top: 80% !important;
+    padding: 7.4vh !important;
+    margin: 0vh !important;
+    transform: translateY(0%) !important;
+    left: 0% !important;
+    top: 25vh !important;
   }
 
   /* background image for mobile */
