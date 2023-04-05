@@ -144,10 +144,6 @@ PROJECTS
   color: #d5dad0;
 }
 
-.plattegrond {
-  margin-top: -10vh;
-}
-
 /* ------------------------------------
 STUDIO 
 ---------------------------------------*/
@@ -209,14 +205,6 @@ LARGE SCREEN
 ------------------------------------*/
 @media (min-width: 768px) {
   .large-gone {
-    display: none !important;
-  }
-  #demo.carousel-item:nth-child(n + 3) {
-    display: none !important;
-  }
-  #demo.carousel-item:nth-child(n + 3)
-    + .carousel-item
-    .carousel-control-next-icon {
     display: none !important;
   }
 }

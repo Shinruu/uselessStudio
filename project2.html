@@ -74,7 +74,7 @@
       <!-- FIRST SLIDE -->
       <div class="carousel-inner">
         <!-- first slide has to be active, else it won't work -->
-        <div class="carousel-item vh-100 w-100">
+        <div class="carousel-item active vh-100 w-100">
           <img
             src="./images/PATIO image 1 for computer.jpg"
             class="w-100 h-100 img-gone"
@@ -209,6 +209,7 @@
           $("#demo").carousel({
             interval: false, // Disable automatic slide advance
           });
+          $("#demo").find(".carousel-item.active").removeClass("active"); // Remove active class from all slides
           $("#demo").find(".carousel-item:first").addClass("active");
           $("#demo").addClass("slide"); // Add slide class to carousel
           $("#demo").find(".carousel-item:gt(1)").remove(); // Remove extra slides
@@ -218,7 +219,7 @@
             interval: false, // Set automatic slide advance interval
           });
 
-          $("#demo").find(".carousel-item").removeClass("active"); // Remove active class from all slides
+          $("#demo").find(".carousel-item.active").removeClass("active"); // Remove active class from all slides
           $("#demo").find(".carousel-item:first").addClass("active"); // Set the first slide as active
         }
       }
