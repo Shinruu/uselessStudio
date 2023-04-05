@@ -385,7 +385,7 @@ MOBILE PHONE
 
   /* for mobile version to adjust text in middle */
   .mobile-text-projects {
-    margin-top: 30vh;
+    margin-top: 45vh;
     text-align: center;
     margin-left: 0rem;
   }
@@ -419,6 +419,7 @@ MOBILE PHONE
     transform: translateY(0%) !important;
     left: 0% !important;
     top: 25vh !important;
+    text-align: center;
   }
 
   /* background image for mobile */
