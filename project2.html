@@ -77,12 +77,22 @@
         <div class="carousel-item active vh-100 w-100">
           <img
             src="./images/PATIO image 1 for computer.jpg"
-            class="w-100 h-100 img-gone"
+            class="w-100 h-100 img-gone tablet-img-gone"
             alt="patio apartment"
           />
           <img
             src="./images/PATIO image 2 for phone.jpg"
             class="w-100 h-100 m-0 phone-image large-gone"
+            alt="patio apartment"
+          />
+          <img
+            src="./images/190922 useless studio0397-.jpg"
+            class="w-50 h-100 float-start"
+            alt="patio apartment"
+          />
+          <img
+            src="./images/190922 useless studio0422-.jpg"
+            class="w-50 h-100 float-end"
             alt="patio apartment"
           />
         </div>
@@ -204,7 +214,7 @@
     ></script>
     <script>
       function adjustCarousel() {
-        if ($(window).width() >= 992) {
+        if ($(window).width() >= 768) {
           // For desktop devices
           $("#demo").carousel({
             interval: false, // Disable automatic slide advance

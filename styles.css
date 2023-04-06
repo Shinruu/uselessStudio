@@ -228,6 +228,15 @@ TABLET (IPAD)
   .tablet-img-gone {
     display: none;
   }
+
+  /* indicators of the carousel to adjust the position on mobile */
+  .carousel-indicators [data-bs-target] {
+    margin-bottom: 4vh;
+  }
+
+  .carousel-caption {
+    margin-bottom: 4vh;
+  }
 }
 /* ----------------------------------
 TABLET (NEST HUB)
@@ -235,16 +244,14 @@ TABLET (NEST HUB)
 @media (min-width: 768px) and (max-width: 1024px) {
   /* icon instead of arrows on the carousel (left) */
   .carousel .carousel-control-prev-icon {
-    margin-left: -10%;
+    margin-left: -25%;
   }
 
   /* icon instead of arrows on the carousel (right) */
   .carousel .carousel-control-next-icon {
-    margin-left: 10%;
+    margin-left: 25%;
   }
-  .mobile-text-info {
-    padding-top: 10vh;
-  }
+
   .info-paragraph {
     height: 60vh;
   }
@@ -252,7 +259,8 @@ TABLET (NEST HUB)
     margin-top: 0vh;
     overflow-y: scroll;
     height: 70vh;
-    width: 15vw;
+    width: 20vw;
+    padding-top: 10vh;
   }
   /* to remove the scroll bars left and right */
   .mobile-text-info::-webkit-scrollbar {
