@@ -324,13 +324,6 @@ MOBILE PHONE
     display: block;
   }
 
-  /* HOME */
-
-  /* giving more margin space so that the text doesn't overlap the navbar on mobile */
-  .title {
-    margin-bottom: 5vh;
-  }
-
   /* STUDIO */
 
   /* for mobile version to adjust text in middle */
@@ -411,7 +404,7 @@ MOBILE PHONE
   }
 
   .phone-image {
-    margin-top: -0.05rem;
+    margin-top: -0.02rem;
   }
 
   /* CONTACT */
