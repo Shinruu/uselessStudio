@@ -215,19 +215,10 @@ TABLET (IPAD)
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* adjusting the position of the text of the contact page */
   .mobile-text-contact {
-    padding: 25vh !important;
-    margin: 0vh !important;
+    padding: 5vh !important;
+    margin: 5vh !important;
     transform: translateY(0%) !important;
-    left: 50vw !important;
-    top: 25vh !important;
-    text-align: center;
-  }
-
-  .mobile-text-contact {
-    padding: 7vh !important;
-    margin: 0vh !important;
-    transform: translateY(0%) !important;
-    left: 6vw !important;
+    left: 20vw !important;
     top: 25vh !important;
     text-align: center;
   }
@@ -238,11 +229,11 @@ TABLET (IPAD)
 
   /* indicators of the carousel to adjust the position on mobile */
   .carousel-indicators [data-bs-target] {
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
   }
 
   .carousel-caption {
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
   }
 }
 /* ----------------------------------
@@ -272,6 +263,39 @@ TABLET (NEST HUB)
   /* to remove the scroll bars left and right */
   .mobile-text-info::-webkit-scrollbar {
     display: none;
+  }
+
+  /* NAVBAR */
+
+  /* home button sticky to top-left */
+  .sticky-position-home {
+    position: fixed !important;
+    bottom: 90%;
+  }
+
+  /* work button sticky to bottom-left */
+  .sticky-position-work {
+    position: fixed !important;
+    bottom: -3px;
+  }
+
+  /* studio button sticky to top-right */
+  .sticky-position-studio {
+    position: fixed !important;
+    top: -3px;
+  }
+
+  /* contact button sticky to bottom-right */
+  .sticky-position-contact {
+    position: fixed !important;
+    bottom: 10%;
+  }
+
+  /* position for mobile version for projects */
+  .project-paragraph {
+    max-width: 100%;
+    text-align: center;
+    max-height: 90%;
   }
 }
 
@@ -396,6 +420,7 @@ MOBILE PHONE
     margin-top: 45vh;
     text-align: center;
     margin-left: 0rem;
+    /* max-height: 50%; */
   }
 
   /* hover over effect to show pictures left */
