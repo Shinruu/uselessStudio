@@ -215,14 +215,21 @@ TABLET (IPAD)
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* adjusting the position of the text of the contact page */
   .mobile-text-contact {
-    margin-left: 0rem;
-    max-width: 100%;
+    padding: 25vh !important;
+    margin: 0vh !important;
+    transform: translateY(0%) !important;
+    left: 50vw !important;
+    top: 25vh !important;
     text-align: center;
   }
 
-  /* background image for mobile */
-  .bg {
-    background-size: contain;
+  .mobile-text-contact {
+    padding: 7vh !important;
+    margin: 0vh !important;
+    transform: translateY(0%) !important;
+    left: 6vw !important;
+    top: 25vh !important;
+    text-align: center;
   }
 
   .tablet-img-gone {
