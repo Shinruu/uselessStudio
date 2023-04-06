@@ -410,18 +410,18 @@ MOBILE PHONE
     display: none;
   }
 
-  .phone-image-patio {
-    margin-top: 0vh;
+  .phone-image {
+    margin-top: -0.05rem;
   }
 
   /* CONTACT */
 
   /* adjusting the position of the text of the contact page */
   .mobile-text-contact {
-    padding: 6vh !important;
+    padding: 7vh !important;
     margin: 0vh !important;
     transform: translateY(0%) !important;
-    left: 5vw !important;
+    left: 6vw !important;
     top: 25vh !important;
     text-align: center;
   }
