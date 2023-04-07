@@ -207,6 +207,17 @@ LARGE SCREEN
   .large-gone {
     display: none !important;
   }
+
+  .mobile-text-info {
+    overflow-y: scroll;
+    height: 65vh;
+    width: 32vw;
+    padding-top: 5vh;
+  }
+  /* to remove the scroll bars left and right */
+  .mobile-text-info::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* ----------------------------------
@@ -256,7 +267,7 @@ TABLET (NEST HUB)
   .mobile-text-info {
     margin-top: 0vh;
     overflow-y: scroll;
-    height: 70vh;
+    height: 55vh;
     width: 20vw;
     padding-top: 10vh;
   }
@@ -358,9 +369,7 @@ MOBILE PHONE
   .carousel-indicators [data-bs-target] {
     margin-bottom: 5vh;
   }
-  .carousel-caption {
-    margin-left: -3vw;
-  }
+
   /* STUDIO */
 
   /* for mobile version to adjust text in middle */
@@ -445,10 +454,6 @@ MOBILE PHONE
 
   .phone-image {
     margin-top: -0.03rem;
-  }
-
-  .phone-image1 {
-    margin-top: -0.04rem;
   }
 
   /* CONTACT */
