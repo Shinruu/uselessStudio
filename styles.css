@@ -358,11 +358,9 @@ MOBILE PHONE
   .carousel-indicators [data-bs-target] {
     margin-bottom: 5vh;
   }
-
-  #demo.carousel-item {
-    display: block;
+  .carousel-caption {
+    margin-left: -3vw;
   }
-
   /* STUDIO */
 
   /* for mobile version to adjust text in middle */
