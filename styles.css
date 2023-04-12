@@ -101,6 +101,7 @@ WORK
 .project-paragraph {
   max-width: 80%;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 /* to remove the scroll bar for project-paragraph */
 .project-paragraph::-webkit-scrollbar {
@@ -155,6 +156,7 @@ STUDIO
   max-width: 80%;
   height: 37.5rem;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 /* to remove the scroll bars for info-paragraph */
@@ -168,6 +170,7 @@ STUDIO
 .middle-paragraph {
   height: 37.5rem;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 /* to remove the scroll bars left and right */
@@ -213,6 +216,7 @@ LARGE SCREEN
     height: 65vh;
     width: 32vw;
     padding-top: 5vh;
+    scrollbar-width: none;
   }
   /* to remove the scroll bars left and right */
   .mobile-text-info::-webkit-scrollbar {
@@ -270,6 +274,7 @@ TABLET (NEST HUB)
     height: 55vh;
     width: 20vw;
     padding-top: 10vh;
+    scrollbar-width: none;
   }
   /* to remove the scroll bars left and right */
   .mobile-text-info::-webkit-scrollbar {
@@ -445,6 +450,7 @@ MOBILE PHONE
     height: 70vh;
     max-width: 90vw;
     padding-left: 10vw;
+    scrollbar-width: none;
   }
 
   /* to remove the scroll bars left and right */
