@@ -197,10 +197,9 @@ a.email-link:hover {
   background-image: url(./images/shirt.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100vw;
-  background-position: center;
-  background-color: #90b4d0;
 }
 
 /* ---------------------------------
@@ -466,9 +465,9 @@ MOBILE PHONE
     margin-top: -0.04rem;
   }
 
-  .phone-image2 {
-    margin-top: -0.5rem;
-  }
+  /* .phone-image2 {
+    margin-top: -1rem;
+  } */
 
   /* CONTACT */
 
@@ -480,10 +479,5 @@ MOBILE PHONE
     left: 6vw !important;
     top: 25vh !important;
     text-align: center;
-  }
-
-  /* background image for mobile */
-  .bg {
-    background-size: contain;
   }
 }
