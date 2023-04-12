@@ -264,9 +264,6 @@ TABLET (NEST HUB)
     margin-left: 25%;
   }
 
-  .info-paragraph {
-    height: 60vh;
-  }
   .mobile-text-info {
     margin-top: 0vh;
     overflow-y: scroll;
