@@ -154,7 +154,7 @@ STUDIO
 .info-paragraph {
   width: 37.5rem;
   max-width: 80%;
-  height: 37.5rem;
+  height: 60vh;
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -168,7 +168,7 @@ STUDIO
 
 /* to make a box around the credentials */
 .middle-paragraph {
-  height: 37.5rem;
+  height: 60vh;
   overflow-y: scroll;
   scrollbar-width: none;
 }
