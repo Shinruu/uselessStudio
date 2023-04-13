@@ -384,6 +384,11 @@ MOBILE PHONE
     bottom: 10%;
   }
 
+  /* COOKIEBANNER */
+  #acceptCookies {
+    margin-right: 5vw;
+  }
+
   /* PICTURES */
 
   /* removing pictures for mobile */
