@@ -38,7 +38,7 @@ NAVBAR
 
 /* navbar position above pictures */
 .nav-link {
-  z-index: 98;
+  z-index: 4000;
 }
 
 /* ----------------------------------------
@@ -50,7 +50,7 @@ PRELOADER
   position: fixed;
   width: 100%;
   height: 100vh;
-  z-index: 100;
+  z-index: 3000;
   overflow: visible;
   background: #fbfcfa url("./images/testgif.gif") no-repeat center center;
   display: none;
@@ -73,7 +73,7 @@ COOKIES
   right: 0;
   background-color: white;
   padding: 10px;
-  z-index: 99;
+  z-index: 5000;
 }
 
 /* Button */
