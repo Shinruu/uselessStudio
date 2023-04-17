@@ -181,8 +181,7 @@ STUDIO
 /* PARAGRAPHS */
 /* box around info-paragraph */
 .info-paragraph {
-  width: 37.5rem;
-  max-width: 80%;
+  width: 31vw;
   height: 60vh;
   overflow-y: scroll;
   scrollbar-width: none;
