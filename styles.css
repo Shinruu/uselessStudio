@@ -99,7 +99,7 @@ CAROUSEL
   background-image: url(./images/linewhite.png);
   height: 4.5rem;
   width: 1px;
-  margin-left: -10rem;
+  margin-left: -8vw;
   background: #303130;
 }
 
@@ -108,7 +108,7 @@ CAROUSEL
   background-image: url(./images/linewhite.png);
   height: 4.5rem;
   width: 1px;
-  margin-left: 10rem;
+  margin-left: 8vw;
   background: #303130;
 }
 
@@ -258,12 +258,12 @@ TABLET (IPAD) ROTATED
 @media (min-width: 1100px) and (max-width: 1370px) {
   /* icon instead of arrows on the carousel (left) */
   .carousel .carousel-control-prev-icon {
-    margin-left: -25%;
+    margin-left: -8vw;
   }
 
   /* icon instead of arrows on the carousel (right) */
   .carousel .carousel-control-next-icon {
-    margin-left: 25%;
+    margin-left: 8vw;
   }
 }
 /* ----------------------------------
@@ -299,12 +299,12 @@ TABLET (NEST HUB)
 @media (min-width: 768px) and (max-width: 1024px) {
   /* icon instead of arrows on the carousel (left) */
   .carousel .carousel-control-prev-icon {
-    margin-left: -25%;
+    margin-left: -8vw;
   }
 
   /* icon instead of arrows on the carousel (right) */
   .carousel .carousel-control-next-icon {
-    margin-left: 25%;
+    margin-left: 8vw;
   }
 
   .mobile-text-info {
