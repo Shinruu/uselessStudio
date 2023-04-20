@@ -90,6 +90,25 @@ COOKIES
   transition: 0.4s ease-out;
 }
 
+/* ------------------------------
+PRIVACY DECLARATION
+---------------------------------
+*/
+
+/* to make a box around privacy */
+.privacy-paragraph {
+  height: 65vh;
+  width: 68vw;
+  margin-left: 15vw;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+/* to remove the scroll bars left and right */
+.privacy-paragraph::-webkit-scrollbar {
+  display: none;
+}
+
 /* ---------------------------------------
 CAROUSEL
 ---------------------------------------- */
