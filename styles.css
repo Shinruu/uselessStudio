@@ -491,10 +491,10 @@ MOBILE PHONE
 
   /* for mobile version to adjust text in middle */
   .mobile-text-projects {
-    margin-top: 45vh;
+    margin-top: 40vh;
     text-align: center;
     margin-left: 0rem;
-    /* max-height: 50%; */
+    max-height: 50vh;
   }
 
   /* hover over effect to show pictures left */
