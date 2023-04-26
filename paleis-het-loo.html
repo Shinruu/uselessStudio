@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon/3d logo.jpg" />
+    <title>paleis het loo</title>
+    <meta
+      name="description"
+      content="Paleis het loo is made by the team pey in Apeldoorn for Vitra."
+    />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-XLE4DYW0K0"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-XLE4DYW0K0");
+  </script>
+  <body>
+    <!-- Cookiebanner -->
+    <div id="cookieBanner">
+      <span
+        >This website is using cookies to give you the best experience.
+        <a href="./privacy.html" class="text-decoration-underline email-link"
+          >Privacy declaration</a
+        >
+        <button class="btn btn-1 float-end" id="acceptCookies">Accept</button>
+      </span>
+    </div>
+    <!-- Navbar -->
+    <div
+      class="position-absolute top-0 start-0 px-3 py-2 nav-link sticky-position-home"
+    >
+      <a class="home fs-4" href="./index.html">home</a>
+    </div>
+    <div
+      class="position-absolute bottom-0 start-0 px-3 py-2 nav-link sticky-position-work"
+    >
+      <a class="work fs-4" href="./work.html">work</a>
+    </div>
+    <div
+      class="position-absolute top-0 end-0 px-3 py-2 nav-link sticky-position-studio"
+    >
+      <a class="studio fs-4" href="./studio.html">studio</a>
+    </div>
+    <div
+      class="position-absolute bottom-0 end-0 px-3 py-2 nav-link sticky-position-contact"
+    >
+      <a class="contact fs-4" href="./contact.html">contact</a>
+    </div>
+    <!-- Carousel -->
+    <!-- id of carousel has to be the same as data-bs-target -->
+    <!-- data-bs-ride has to be set on false if you want to click, else for slideshow it has to be on carousel -->
+    <div
+      id="demo"
+      class="carousel slide"
+      data-bs-ride="false"
+      data-bs-wrap="true"
+    >
+      <!-- indicators on the bottom -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="3"
+          class="large-gone"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="4"
+          class="large-gone"
+        ></button>
+        <!-- make here more buttons if you want more slides -->
+      </div>
+      <!-- CAROUSEL -->
+      <div class="carousel-inner">
+        <!-- FIRST SLIDE -->
+        <!-- first slide has to be active, else it won't work -->
+        <div class="carousel-item active vh-100 w-100">
+          <img
+            src="./images/1e foto.jpg"
+            class="w-100 h-100 img-gone"
+            alt="paleis het loo"
+          />
+          <img
+            src="./images/1e foto (mobiel).jpg"
+            class="w-100 h-100 m-0 phone-image large-gone"
+            alt="paleis het loo"
+          />
+        </div>
+        <!-- SECOND SLIDE -->
+        <div class="carousel-item vh-100 w-100">
+          <img
+            src="./images/2e paleis t loo PLAN (mobiel).jpg"
+            class="w-100 h-100 large-gone px-5"
+            alt="paleis het loo plattegrond"
+          />
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 px-5">
+              <img
+                src="./images/2e paleis t loo PLAN.jpg"
+                class="w-100 h-100 img-gone py-5"
+                alt="paleis het loo plattegrond"
+              />
+            </div>
+            <div class="col-12 col-md-6 px-5">
+              <div class="align-items-center justify-content-center px-5">
+                <p class="mobile-text-info d-none d-sm-block px-4">
+                  <span class="titles">title</span> <br />
+                  paleis het loo <br />
+                  <br />
+                  <span class="titles">location</span> <br />
+                  apeldoorn <br />
+                  <br />
+                  <span class="titles">client</span> <br />
+                  vitra <br />
+                  <br />
+                  <span class="titles">date</span> <br />
+                  2017 <br />
+                  <br />
+                  <span class="titles">size</span> <br />
+                  100m2 <br />
+                  <br />
+                  <span class="titles">illustrations</span> <br />
+                  useless studio <br />
+                  <br />
+                  <span class="titles">photography</span> <br />
+                  michael van oosten <br />
+                  <br />
+                  <span class="titles">team</span> <br />
+                  pey
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- THIRD SLIDE -->
+        <div class="carousel-item vh-100 w-100">
+          <img
+            src="./images/3e linker helft.jpg"
+            class="w-50 h-100 img-gone float-start"
+            alt="paleis het loo"
+          />
+          <img
+            src="./images/3e rechter helft.jpg"
+            class="w-50 h-100 img-gone float-end"
+            alt="paleis het loo"
+          />
+          <div class="align-items-center justify-content-center">
+            <p class="mobile-text-info large-gone">
+              <span class="titles">title</span> <br />
+              paleis het loo <br />
+              <br />
+              <span class="titles">location</span> <br />
+              apeldoorn <br />
+              <br />
+              <span class="titles">client</span> <br />
+              vitra <br />
+              <br />
+              <span class="titles">date</span> <br />
+              2017 <br />
+              <br />
+              <span class="titles">size</span> <br />
+              100m2 <br />
+              <br />
+              <span class="titles">illustrations</span> <br />
+              useless studio <br />
+              <br />
+              <span class="titles">photography</span> <br />
+              michael van oosten <br />
+              <br />
+              <span class="titles">team</span> <br />
+              pey
+            </p>
+          </div>
+        </div>
+        <!-- FORTH SLIDE MOBILE -->
+        <div class="carousel-item vh-100 w-100">
+          <img
+            src="./images/3e mobiel.jpg"
+            class="w-100 h-100 phone-image2 large-gone"
+            alt="paleis het loo"
+          />
+        </div>
+        <!-- FIFTH SLIDE MOBILE -->
+        <div class="carousel-item vh-100 w-100">
+          <img
+            src="./images/4e foto (mobiel).jpg"
+            class="w-100 h-100 phone-image2 large-gone"
+            alt="paleis het loo"
+          />
+        </div>
+        <!-- carousel-caption is text in the carousel at the bottom above the indicators -->
+        <!-- d-none is hiding elements responsively on all devices-->
+        <div class="carousel-caption d-none d-md-block text-center">
+          <h6>paleis het loo</h6>
+        </div>
+      </div>
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cookies.js"></script>
+    <script>
+      function adjustCarousel() {
+        if ($(window).width() >= 768) {
+          // For desktop devices
+          $("#demo").carousel({
+            interval: false, // Disable automatic slide advance
+          });
+          $("#demo").find(".carousel-item.active").removeClass("active"); // Remove active class from all slides
+          $("#demo").find(".carousel-item:first").addClass("active");
+          $("#demo").addClass("slide"); // Add slide class to carousel
+          $("#demo").find(".carousel-item:gt(2)").remove(); // Remove extra slides
+        } else {
+          // For mobile devices
+          $("#demo").carousel({
+            interval: false, // Set automatic slide advance interval
+          });
+
+          $("#demo").find(".carousel-item.active").removeClass("active"); // Remove active class from all slides
+          $("#demo").find(".carousel-item:first").addClass("active"); // Set the first slide as active
+        }
+      }
+
+      $(document).ready(function () {
+        adjustCarousel(); // Call the function on page load
+        $(window).resize(function () {
+          setTimeout(function () {
+            adjustCarousel(); // Call the function on window resize
+          }, 300);
+        });
+      });
+    </script>
+  </body>
+</html>
